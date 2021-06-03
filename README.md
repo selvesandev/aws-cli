@@ -43,6 +43,15 @@ aws lambda invoke \
 * Delete a function `aws lambda delete-function --function-name function_name`
 
 
+#### Deploy a zipped SAM build
+
+* `cd root_dir`
+* `sam build`
+* `sam local invoke` (open docker)
+* `zip everything that is inside .aws-sam/build/yourFunction/*`
+* `aws lambda update-function-code --function-name "myFunction" --zip-file "fileb://./app.zip" --region "us-east-2"`
+
+
 ## Serverless
 
 * `aws create --template` to list all the available template.
