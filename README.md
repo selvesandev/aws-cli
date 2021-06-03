@@ -44,6 +44,15 @@ aws lambda invoke \
 ```
 * Delete a function `aws lambda delete-function --function-name function_name`
 
+#### Use Layers in lambda
+Layers are used to separate a library for the lamba function is used it independently.
+https://www.youtube.com/watch?v=3BH79Uciw5w&ab_channel=PyLeninPyLenin
+
+1) `pip install requests -t .` install python package in current working directory.
+2) zip the download library folders and upload to s3 if the size is big or upload id directoly from lambda layers.
+3) On the aws console create a layer.
+4) And use the created layer for the new function or existing one.
+
 
 #### Deploy a zipped SAM build
 
