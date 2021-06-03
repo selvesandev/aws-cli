@@ -62,4 +62,8 @@ Note if your function is huge in size then use `--cli-connect-timeout 6000` to i
 
 
 
+## S3
 
+* Upload Files `aws s3 cp your_file s3://bucketname/`
+* `aws s3 ls`
+* Upload Multiple Files `aws s3 cp your/folder/sync s3://bucketname/sync --recursive`
