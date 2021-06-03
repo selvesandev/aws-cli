@@ -22,6 +22,8 @@ Default output format [None]: text
 
 * `export AWS_DEFAULT_PROFILE=profile_name` To switch to a different profile than default.
 
+* `aws s3 cp Archive.zip s3://bucket_name` upload file from local folder to s3 
+
 
 ## LAMBDA
 
