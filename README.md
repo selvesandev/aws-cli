@@ -51,6 +51,7 @@ aws lambda invoke \
 * `zip everything that is inside .aws-sam/build/yourFunction/*`
 * `aws lambda update-function-code --function-name "myFunction" --zip-file "fileb://./app.zip" --region "us-east-2"`
 
+Note if your function is huge in size then use `--cli-connect-timeout 6000` to increase the timout of aws cli
 
 ## Serverless
 
