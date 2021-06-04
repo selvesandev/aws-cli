@@ -76,3 +76,15 @@ Note if your function is huge in size then use `--cli-connect-timeout 6000` to i
 * Upload Files `aws s3 cp your_file s3://bucketname/`
 * `aws s3 ls`
 * Upload Multiple Files `aws s3 cp your/folder/sync s3://bucketname/sync --recursive`
+
+
+## ECR
+
+`ecr create-repository --repository-name python-lambda-ecr-containerise --image-scanning-configuration scanOnPush=true --region us-east-2`
+
+#### Push to ECR (Not Basic Auth Issue)
+
+1) `aws ecr get-login --region region`
+2) `docker login -u AWS -p password https://aws_account_id.dkr.ecr.us-east-1.amazonaws.com`
+
+
